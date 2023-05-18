@@ -1,0 +1,31 @@
+{
+    "Products":[
+        {
+            "id":1,
+            "title": "Our Product Range",
+            "images":[
+                {
+                    "id":1,
+                    "title":"Bread",
+                    "image": "src/assets/img/slices-zoomed.jpg"
+                },
+                {
+                    "id":2,
+                    "title":"pies",
+                    "image": "src/assets/img/bakers-pie.jpg"
+                },
+                {
+                    "id":3,
+                    "title":"scone",
+                    "image": "src/assets/img/scone-cherry.jpg"
+                },
+                {
+                    "id":4,
+                    "title":"donuts",
+                    "image": "src/assets/img/ring-donuts.jpg"
+                }
+            ]
+
+        }
+    ]
+}
