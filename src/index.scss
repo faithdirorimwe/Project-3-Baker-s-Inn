@@ -24,6 +24,7 @@
   --accent-brown:#b2904c;
   --accent-red:#ff4655;
   --accent-blue: #0188f1;
+  --accent-cream: #F8F8F8;
 }
 
 
@@ -47,8 +48,8 @@ a{
   font-family: 'Avenir LT Std';
 }
 
-.about, .products{
-  h1{
+.about, .products, .tour{
+  h2{
     font-size: 38px;
     color: var(--pri-color);
     font-weight: 800;

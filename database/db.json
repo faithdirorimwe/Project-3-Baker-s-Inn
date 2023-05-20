@@ -1,31 +1,41 @@
+
+
 {
-    "Products":[
+    "Products": [
         {
-            "id":1,
+            "id": 1,
             "title": "Our Product Range",
-            "images":[
+            "images": [
                 {
-                    "id":1,
-                    "title":"Bread",
-                    "image": "src/assets/img/slices-zoomed.jpg"
+                    "id": 1,
+                    "title": "Bread",
+                    "image": "src/assets/img/Rectangle 22.png"
                 },
                 {
-                    "id":2,
-                    "title":"pies",
-                    "image": "src/assets/img/bakers-pie.jpg"
+                    "id": 2,
+                    "title": "Meat pies",
+                    "image": "src/assets/img/Rectangle 24.png"
                 },
                 {
-                    "id":3,
-                    "title":"scone",
-                    "image": "src/assets/img/scone-cherry.jpg"
+                    "id": 3,
+                    "title": "scone",
+                    "image": "src/assets/img/Rectangle 26.png"
                 },
                 {
-                    "id":4,
-                    "title":"donuts",
-                    "image": "src/assets/img/ring-donuts.jpg"
+                    "id": 4,
+                    "title": "donuts",
+                    "image": "src/assets/img/Rectangle 28.png"
                 }
             ]
-
         }
+    ],
+
+    "Tour":[
+    {
+        "id": 2,
+        "title": "Book a factory tour",
+        "content": "Keen on seeing how Baker’s inn products are made? Are you interested in a field trip day for your school’s class? Get in touch with us to book a tour of our factory that is closest to you. Fill in the booking form and we will get back to you.",
+        "image": "src/assets/img/Rectangle 32.png"
+    }
     ]
 }

@@ -1,20 +1,24 @@
 import About from "../components/About";
 import Hero from "../components/Hero";
 import Products from "../components/Products";
+import Tour from "../components/Tour";
 
 
 const Home = () => {
     return (
         <> 
-        <div className="hero">
+        <section id="hero">
              <Hero />
-        </div>
-       <div className="about">
+        </section>
+       <section id="about">
           <About/>
-       </div>
-       <div className="products">
+       </section>
+       <section id="products">
         <Products/>
-       </div>
+       </section>
+       <section id="tour">
+        <Tour/>
+       </section>
        </>
 
     );

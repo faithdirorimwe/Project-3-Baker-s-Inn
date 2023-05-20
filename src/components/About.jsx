@@ -8,7 +8,7 @@ const About = () => {
     return ( 
         <div id="about" className="about">
             <div className="about-inner">
-              <h1>About Baker's Inn</h1>  
+              <h2>About Baker's Inn</h2>  
               <div className="content">
                 <p>It all started back in the eighties when Baker's Inn was just a small confectionery company that employed 40 people and produced about 30,000 loaves a day. We now aim to provide a nourishing, convenient and accessible answer to hunger’s call.</p>
                 <Button toPath= '/About' title="Read more" />
