@@ -37,5 +37,138 @@
         "content": "Keen on seeing how Baker’s inn products are made? Are you interested in a field trip day for your school’s class? Get in touch with us to book a tour of our factory that is closest to you. Fill in the booking form and we will get back to you.",
         "image": "src/assets/img/Rectangle 32.png"
     }
+    ],
+
+    "Donation": [
+        {
+            "id": 3,
+            "title": "Request a donation",
+            "content": "If you are holding an event that you wish to have us donate to, we’re more than glad to help. Fill in the donation request form for us to best understand how we can increase your event’s impact in the local community",
+            "image": "src/assets/img/Rectangle 31.png"
+
+        }
+    ],
+
+    "Kids":[
+        {
+            "id":4,
+            "title": "Kids Corner",
+            "content": "Let your children join the fun. Explore a place with exciting games and the top winners stand a chance to win exciting monthly prizes!",
+                    "imageOne": "src/assets/img/2cd43b_19a192ae6ec44ffc9597044f7f063e0c_mv2_1-removebg-preview (1).png",
+                "imageTwo": "src/assets/img/new-super-mario-bros-2-super-paper-mario-png-favpng-rsGyK8GSVR5JcU6tF9nzJCgB8-removebg-preview 1.png",
+            "imageThree": "src/assets/img/kisspng-arecaceae-leaf-palm-branch-palm-leaf-leaves-png-5ab1c5aa8368b7 1.png",
+           "imageFour": "src/assets/img/Group 7.png"
+                
+               
+        }
+    ],
+
+    "Notified": [
+        {
+            "id":5,
+            "title": "Get Notified about promotions we offer",
+            "email": "your email",
+            "submit": "SUBMIT",
+            "patternOne": "src/assets/img/African Pattern 4.png",
+            "patternTwo": "src/assets/img/African Pattern 7.png",
+            "imageOne": "src/assets/seed-loaf.png",
+            "imageTwo": "src/assets/white-soft-loaf.png",
+            "imageThree": "src/assets/brown-loaf.png"
+
+        }
+    ],
+
+    "footer":[
+        {
+            "id": 6,
+            "bakersimage": "src/assets/img/Bakers-icon.png",
+            "instatitle": "Istagram Feed",
+            "instacontent":[
+                {
+                    "id":1,
+                    "image": "src/assets/img/beans-russian.jpg"
+                },
+                {
+                    "id":2,
+                    "image": "src/assets/img/salad.jpg"    
+                },
+                {
+                    "id":3,
+                    "image": "src/assets/img/slice-jam.jpg"    
+                }
+            ],
+            "loctitle": "Our Location",
+            "loccotent":[
+                {
+                   "id": 1,
+                   "title":"1 Shepperton Road"
+                },
+                {
+                    "id": 2,
+                    "title":"Graniteside,"
+                 },
+                 {
+                    "id": 3,
+                    "title":"Harare,"
+                 },
+                 {
+                    "id": 4,
+                    "title":"Zimbabwe."
+                 }
+            ],
+            "intouchtitle": "Get In Touch With Us",
+            "intouchcontent":[
+                {
+                    "id":1,
+                    "title":"08080151 ",
+                    "image": "src/assets/img/carbon_phone-voice-filled.png"
+                },
+                {
+                    "id":2,
+                    "title":"08080152"
+                    
+                },
+                {
+                    "id":3,
+                    "title":"+263 242 751 481"
+                },
+                {
+                    "id":4,
+                    "title":"+263 242 710 334"
+                },
+                {
+                    "id":5,
+                    "title":"marketing@bakersinnzim.com",
+                    "image":"src/assets/img/teenyicons_envelope-solid.png"
+                }
+            ],
+            "sitemaptitle":"Sitemap",
+            "sitemapcontent":[
+                {
+                    "id": 1,
+                    "title": "Home"
+                },
+                {
+                    "id": 2,
+                    "title": "About Us"
+                },
+                {
+                    "id": 3,
+                    "title": "Products"
+                },
+                {
+                    "id": 4,
+                    "title": "Recipes"
+                },
+                {
+                    "id": 5,
+                    "title": "Kids Corner"
+                }
+            ],
+            "endtitle": "Subsidiary of",
+            "content": "Copyright © 2022 Bakers Inn. All rights reserved. Site by ",
+            "contentinner": "NoWalls Pan Africa",
+            "innscorimg": "src/assets/img/inscor_logo.png"
+        }
     ]
 }

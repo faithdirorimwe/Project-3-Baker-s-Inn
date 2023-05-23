@@ -18,7 +18,7 @@ const Hero = () => {
                 <div className="infor">
                     <h1>Bringing you the <span className='one'>best value </span> at the <span className='two'>best prices.</span></h1>
                     <p>The freshest sandwiches you can make are with Baker’s inn soft white loaf.</p>
-                    <Button toPath='#about' title="Read More" />
+                    <Button toPath='' title="Read More" />
                 </div>
                 <div className="image-container">
                     <div className="image-wrapper">

@@ -8,7 +8,7 @@ const Products = () => {
         <>
             {Products && Products.map((item, index) => {
                 return (
-                    <section className="products">
+                    <section className="products" key={index}>
                         <h2>{item.title}</h2>
                         <div className="prod-imgBox">
                             {item.images && item.images.map(item => {
@@ -22,7 +22,7 @@ const Products = () => {
                                 )
                             })}
                         </div>
-                        <Button toPath='' title="View complete range"/>
+                        <Button toPath='' title="PLAY GAMES"/>
                     </section>
                 )
             })}
