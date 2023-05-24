@@ -11,7 +11,7 @@ const Navbar = () => {
             <img src={logo} alt="baker's_inn logo" className='logo' />
         </Link>
         <ul className='menu'>
-            <li className='menu-item'><NavLink to = "/About">About Us</NavLink></li>
+            <li className='menu-item'><NavLink to = "/AboutPage">About Us</NavLink></li>
             <li className='menu-item'><NavLink to = "/Products">Products</NavLink></li>
             <li className='menu-item'><NavLink to = "/Recipes">Recipes</NavLink></li>
             <li className='menu-item'><NavLink to = "Kids">Kid's Corner</NavLink></li>

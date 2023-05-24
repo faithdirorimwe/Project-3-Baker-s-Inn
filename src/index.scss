@@ -48,7 +48,7 @@ a{
   font-family: 'Avenir LT Std';
 }
 
-.about, .products, .tour-don, .notification{
+.about, .products, .tour-don, .notification, .about-hero, .about-about, .about-services{
   h2{
     font-size: 38px;
     color: var(--pri-color);
@@ -57,7 +57,7 @@ a{
   }
 }
 
-.notification{
+.notification, .about-hero{
   h2{
     color: #fff;
   }

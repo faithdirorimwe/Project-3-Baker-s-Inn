@@ -16,7 +16,7 @@ const Products = () => {
                                     <div className="img-card">
                                         <img src={item.image} alt="" />
                                         <div className="prod-textBox">
-                                            <h3>{item.title}</h3>
+                                            <h2>{item.title}</h2>
                                         </div>
                                     </div>
                                 )

@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 import Kids from "../components/Kids";
 import Products from "../components/Products";
 import Tour from "../components/Tour";
-import Footer from "../components/Footer";
+
 
 
 
@@ -33,9 +33,7 @@ const Home = () => {
         <section id="notified">
             <Notified/>
         </section>
-        <footer>
-         <Footer/>
-        </footer>
+      
        </>
 
     );
