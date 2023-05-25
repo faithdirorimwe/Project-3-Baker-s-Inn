@@ -7,7 +7,7 @@ const Donations = () => {
         <>
         {Donation && Donation.map((item, index) => {
             return(
-            <div className="donation tour-don">
+            <div className="donation tour-don" key={index}>
                  <div className="img-container">
                     <img src={item.image} alt="" />
                 </div>

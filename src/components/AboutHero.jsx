@@ -6,7 +6,7 @@ const AboutHero = () => {
         <>
         {AboutHero && AboutHero.map((item, index) => {
             return(
-                <div className="about-hero">
+                <div className="about-hero" key={index}>
                     <div className="image">
                         <img src={item.image} alt="" />
                         <div className="text">

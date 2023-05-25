@@ -6,12 +6,12 @@ const AboutServices = () => {
         <>
         {AboutServices && AboutServices.map((item, index) => {
             return(
-                <div className="about-services">
+                <div className="about-services" key={index}>
                     <h2>{item.title}</h2>
                     <div className="about-inner">
                         {item.content && item.content.map((item, index) => {
                             return(
-                                <div className="inner">
+                                <div className="inner" key={index}>
                                     <div className="image">
                                      <img src={item.image} alt="" />   
                                     </div>
@@ -27,7 +27,7 @@ const AboutServices = () => {
                     <div className="about-innertwo">
                     {item.contentone && item.contentone.map((item, index) => {
                             return(
-                                <div className="inner">
+                                <div className="inner" key={index}>
                                     <div className="image">
                                      <img src={item.image} alt="" />   
                                     </div>

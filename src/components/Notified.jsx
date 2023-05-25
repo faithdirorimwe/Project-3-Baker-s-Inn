@@ -6,7 +6,7 @@ const Notified = () => {
         <>
             {Notified && Notified.map((item, index) => {
                 return (
-                    <div className="notification">
+                    <div className="notification" key={index}>
                         
                             <img src={item.patternOne} alt="" />
                             <img src={item.patternTwo} alt="" />

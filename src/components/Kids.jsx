@@ -10,7 +10,7 @@ const Kids = () => {
       <>
          {Kids && Kids.map((item, index) => {
             return (
-               <div className="kids">
+               <div className="kids" key={index}>
                   
                   <div className="kids-content">
                      <PatternOne className='pattern' />
