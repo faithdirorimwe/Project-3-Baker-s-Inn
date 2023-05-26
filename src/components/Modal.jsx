@@ -1,3 +1,5 @@
+
+
 const Modal = () => {
     return (
         <div className="modalBackground">
@@ -45,6 +47,8 @@ const Modal = () => {
                         <p>Age Range of Participants</p>
                     </div>
                 </div>
+
+
                 <div className="footer"></div>
             </div>
         </div>
