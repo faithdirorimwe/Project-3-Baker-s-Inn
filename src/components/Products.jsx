@@ -1,18 +1,9 @@
 import useFetch from "./useFetch";
 import Button from './Button';
-import Modal from "./Modal";
-import { useState } from "react";
+
 
 const Products = () => {
     const { data: Products, error, isPending } = useFetch('http://localhost:7001/Products');
-    const [openModal, SetOpenModal] = useState(false);
-    console.log('openModal',openModal);
-
-  const handler = () =>{
-        if (openModal === false){
-            SetOpenModal(true)
-        }
-    }
  
     return (
         <>
@@ -32,15 +23,8 @@ const Products = () => {
                                 )
                             })}
                         </div>
-                        <Button toPath='' title="VIEW COMPLETE Range" 
-                        onClick={() =>{
-                            // SetOpenModal(true);
-                            handler()
-                            }}
-                            >
-                            
-                            </Button>
-                       { openModal && <Modal/>}
+                        <Button toPath='' title="VIEW COMPLETE Range"/>
+                        
                     </section>
                 )
             })}

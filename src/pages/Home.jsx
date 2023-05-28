@@ -5,7 +5,9 @@ import Hero from "../components/Hero";
 import Kids from "../components/Kids";
 import Products from "../components/Products";
 import Tour from "../components/Tour";
-import Recipes from "../components/Recipes";
+import Recipies from "../components/Recipies";
+
+
 
 
 
@@ -31,8 +33,8 @@ const Home = () => {
         <section id="kids">
            <Kids/>
         </section>
-        <section id="recipes">
-            <Recipes/>
+        <section id="recipies">
+            <Recipies/>
         </section>
         <section id="notified">
             <Notified/>

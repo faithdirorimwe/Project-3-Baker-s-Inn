@@ -20,16 +20,19 @@
             color: var(--pri-color);
             font-weight: 750;
         }
-    }
 
-    .btn{
-        margin-top: -5px;
-        a{
+        .btn {
+            margin-top: -5px;
             color: #fff;
+
         }
     }
 
+
+
 }
+
+
 
 // button
 .btn {
@@ -354,97 +357,167 @@
     }
 }
 
-.recipes{
+
+// home recipies
+#recipies {
     position: relative;
-    color: var(--pri-color);
-    margin-bottom: 100px;
-    h1{
-        font-weight: 800;
+    margin-top: 80px;
+
+    h2 {
+        padding-bottom: 50px;
+    }
+}
+
+// tabspro
+.pro-tabs {
+
+
+
+    .content-tabs {
+        width: 100%;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
+
+    .content {
+
+        width: 90%;
+        display: none;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        .card {
+            color: #261B6C;
+            border: none;
+            background: #F7F5E8;
+            border-radius: 7px;
+
+
+
+            .card-title {
+
+                font-size: 38px;
+                line-height: 40px;
+            }
+
+
+        }
+    }
+
+    .one {
+        margin-left: 80px;
+        width: 165%;
+        position: relative;
+
+
+
+        .card-title {
+            padding-top: 260px;
+        }
+
+        img {
+            width: 32%;
+            position: absolute;
+            top: -28px;
+            right: 132px;
+        }
+    }
+
+}
+
+// tabs
+.bloc-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #261b6c5f;
+    border-bottom: 1px solid #261B6C;
+}
+
+.card-title {
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.recipies {
+
+
+    .content-tabs {
+        width: 100vw;
         margin-top: 50px;
-    }
-
-    .bloc-tabs{
-        margin-top: 60px;
         display: flex;
-        justify-content: center;
-        gap: 60px;
-        border-bottom: 1px solid #261B6C;
-        h2{
-           font-weight: 700; 
-           color: #261b6c5a;
-        }
-
-        .active-tabs{
-
-            border-bottom: 2px solid var(--pri-color);
-        }
-
-    //    .active-tabs::before{
-    //     content: "";
-    //     display: block;
-    //     position: absolute;
-    //     top: -5px;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     width: calc(100% + 2px);
-    //     height: 5px;
-    //    } 
-    }
-
-    .content-tabs{
-        display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-     
+
 
     }
 
-    .content{
+    .content {
+        width: 100%;
         display: none;
         display: flex;
         justify-content: center;
-        align-items: center;
-        text-align: start;
-        gap: 50px;
-       
-       
+        gap: 30px;
+        margin-bottom: 150px;
 
-       
 
-        h2{
-            padding-top: 30px;
+        .card {
+            border: none;
+            width: 28%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
             font-weight: 800;
+            color: #261B6C;
+            text-align: start;
+
+
+
+
+            .card-content {
+                span {
+                    color: #C6A460;
+                    padding-left: 20px;
+
+                }
+            }
+
+            .card-contenttwo {
+                background-color: #C6A460;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                padding: 13px 10px;
+
+                img {
+                    width: 30px;
+                }
+
+            }
+
+            .card-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
 
-    .card{
-        
-        margin-top: 50px;
-        border: none;
-        width: 20%;
-        font-weight: 800;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-border-radius: 5px;
-    }
-
-    .card-infor{
-        display: flex;
-        gap: 20px;
-
-       &:last-child{
-        color: #C6A460;
-       }
-        
-    }
-
-   
-  
-
-    
-
     .active-content {
         display: block;
+        display: flex;
     }
+
 }
 
 // home notification section
@@ -537,7 +610,7 @@ border-radius: 5px;
     background-color: var(--pri-color);
     color: var(--bg-color);
     padding-top: 10px;
-   
+
 
     .bakers-logo {
         position: relative;
@@ -570,7 +643,7 @@ border-radius: 5px;
         align-items: start;
         gap: 50px;
         padding-bottom: 50px;
-        
+
 
         .instagram-content {
             display: flex;
@@ -595,7 +668,7 @@ border-radius: 5px;
                 gap: 10px;
 
                 img {
-                    
+
                     width: 20px;
                     height: 20px;
                 }
@@ -609,7 +682,7 @@ border-radius: 5px;
         padding-bottom: 10px;
     }
 
-    .footer-inner{
+    .footer-inner {
         padding-top: 50px;
         padding-bottom: 20px;
         border-top: 2px solid #fff;
@@ -620,13 +693,13 @@ border-radius: 5px;
         justify-content: start;
         gap: 400px;
 
-        .inner-con{
+        .inner-con {
             display: flex;
             align-items: end;
             gap: 5px;
 
-            
-            img{
+
+            img {
                 width: 30%;
                 position: relative;
                 top: -18px;
@@ -634,8 +707,8 @@ border-radius: 5px;
             }
         }
 
-        .copyright{
-            span{
+        .copyright {
+            span {
                 color: #C6A460;
                 font-weight: 750;
             }
@@ -647,21 +720,21 @@ border-radius: 5px;
 
 // ABOUT SECTION
 // about hero section
-.about-hero{
+.about-hero {
     margin-top: 50px;
 
-    .image{
+    .image {
         max-width: 1280px;
         margin: 0 auto;
         position: relative;
         right: 0;
         left: 0;
-        
-        img{
+
+        img {
             width: 100%;
         }
 
-        .text{
+        .text {
             position: absolute;
             bottom: 10px;
             background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
@@ -671,7 +744,7 @@ border-radius: 5px;
             bottom: -5px;
             color: var(--bg-color);
 
-            h2{
+            h2 {
                 text-align: start;
                 padding-top: 40px;
                 padding-left: 40px;
@@ -682,13 +755,13 @@ border-radius: 5px;
 }
 
 // about about section
-#about-about{
+#about-about {
     background-color: #F7F5E8;
     max-width: 1280px;
     margin: 0 auto;
-   
 
-    .about-about{
+
+    .about-about {
         margin-top: 180px;
         display: flex;
         align-items: center;
@@ -696,7 +769,7 @@ border-radius: 5px;
         height: 50vh;
     }
 
-    .mission{
+    .mission {
         color: var(--pri-color);
         display: flex;
         align-items: center;
@@ -705,78 +778,80 @@ border-radius: 5px;
         text-align: start;
         gap: 46px;
 
-       
 
-      
-        
-        .image{
+
+
+
+        .image {
             background-color: var(--accent-brown);
             border-radius: 50%;
             padding: 20px;
             text-align: center;
-            
 
-            img{
+
+            img {
                 width: 100%;
             }
         }
     }
 
-    .one{
-        padding:25px ;
+    .one {
+        padding: 25px;
     }
 }
 
 // aboutservices section
-#about-services{
+#about-services {
     background-color: var(--accent-cream);
     margin-top: 180px;
 
-    .about-services{
+    .about-services {
         padding-bottom: 100px;
         padding-top: 80px;
-     max-width: 1280px;
-     margin: 0 auto;
-     color: var(--pri-color);
-     text-align: center;
+        max-width: 1280px;
+        margin: 0 auto;
+        color: var(--pri-color);
+        text-align: center;
     }
 
-    h3{
+    h3 {
         padding-top: 30px;
         font-weight: 800;
     }
 
-    .about-inner{
+    .about-inner {
         display: flex;
         padding-top: 50px;
         justify-content: center;
         align-items: start;
         gap: 40px;
-         p{
+
+        p {
             width: 270px;
-         }
-        img{
+        }
+
+        img {
             width: 400px;
         }
     }
 
-    .about-innertwo{
+    .about-innertwo {
         padding-top: 50px;
         display: flex;
         justify-content: center;
         gap: 40px;
-    
-        p{
+
+        p {
             width: 285px;
         }
 
-        img{
+        img {
             width: 400px;
         }
 
     }
 
-    .about-content{
+    .about-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -785,12 +860,12 @@ border-radius: 5px;
 }
 
 // about ceo
-#ceo-info{
+#ceo-info {
     margin-top: 80px;
 
-    .ceo-info{
+    .ceo-info {
         color: var(--pri-color);
-        display:flex;
+        display: flex;
         max-width: 1280px;
         margin: 0 auto;
         text-align: start;
@@ -798,19 +873,248 @@ border-radius: 5px;
         align-items: center;
         gap: 60px;
 
-        .image{
-            img{
+        .image {
+            img {
                 width: 600px;
             }
         }
     }
 }
 
-  
+// PRODUCT SECTION
+// products about
+.products-about {
+
+    margin-top: 80px;
+
+    h2 {
+        padding-bottom: 50px;
+    }
+}
+
+// RECIPE SECTION
+.recipe-hero {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+
+    .recipe-slider {
+        width: 50%;
+        color: #261B6C;
+        display: flex;
+        justify-content: start;
+        gap: 109px;
 
 
 
+        .innercon {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #C6A460;
 
-  
+            img {
+                width: 20px;
+                margin-top: -19px;
+            }
+
+        }
+
+        .recipe-sliderinner {
+            text-align: start;
+            // padding: 80px;
+
+            h2 {
+                font-size: 55px;
+                width: 536px;
+            }
+        }
+    }
+
+    .slider-content {
+        width: 50%;
+        display: flex;
+        text-align: start;
+        gap: 20px;
+
+        .slider-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-right: -65px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .slider-image {
+        width: 80%;
+        object-fit: contain;
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            width: 258px;
+            height: 278px;
+            background-color: #000000;
+            opacity: 0.5;
+            bottom: 1px;
+            border-radius: 5px;
+        }
+    }
+
+    .one {
+        .overlay {
+            width: 273px;
+            height: 300px;
+        }
+    }
+}
+
+// KIDS SECTION
+// kids hero
+.kids-hero {
+    display: flex;
+    align-items: center;
+    color: var(--pri-color);
+
+    .heading {
+        .text {
+            font-family: "3dumb";
+            font-size: 100px;
+        }
+    }
+
+    .images-container {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        margin-top: -105px;
+        margin-right: 46px;
+
+        .img-one {
+            position: relative;
+            left: 180px;
+
+            img {
+                width: 95%;
+            }
+        }
+
+        .img-two {
+            img {
+                width: 100%;
+            }
+        }
+
+    }
 
 
+}
+
+// kids games
+.kids-games {
+
+    max-width: 1280px;
+    margin: 0 auto;
+
+
+
+    .games {
+        text-align: start;
+        width: 100%;
+        margin-top: 50px;
+        color: #fff;
+        height: 90vh;
+
+    }
+
+    .game-one {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 60px;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            text-align: start;
+
+            h1 {
+                font-weight: 800;
+            }
+
+            p {
+                width: 371px;
+                font-weight: 750;
+            }
+
+
+        }
+
+    }
+
+    .g-one {
+        background-color: #018BF1;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .g-two {
+        display: flex;
+        background-color: #FF4655;
+       
+
+        img {
+            width: 350px;
+        }
+
+        .btn{
+            background-color: #fff;
+            color: #FF4655;
+        }
+    
+
+        .riskyway-game {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .img-one {
+                position: relative;
+                left: 160px;
+            }
+
+            .img-two {
+                position: relative;
+                top: -106px;
+                right: 49px;
+            }
+        }
+
+    }
+
+    .g-three {
+        display: flex;
+        background-color: var(--pri-color);
+
+        img{
+            width: 90%;
+        }
+
+    }
+
+}

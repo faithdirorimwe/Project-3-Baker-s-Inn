@@ -12,9 +12,9 @@ const Navbar = () => {
         </Link>
         <ul className='menu'>
             <li className='menu-item'><NavLink to = "/AboutPage">About Us</NavLink></li>
-            <li className='menu-item'><NavLink to = "/Products">Products</NavLink></li>
-            <li className='menu-item'><NavLink to = "/Recipes">Recipes</NavLink></li>
-            <li className='menu-item'><NavLink to = "Kids">Kid's Corner</NavLink></li>
+            <li className='menu-item'><NavLink to = "/Productpage">Products</NavLink></li>
+            <li className='menu-item'><NavLink to = "/Recipespage">Recipes</NavLink></li>
+            <li className='menu-item'><NavLink to = "Kidspage">Kid's Corner</NavLink></li>
             <Button toPath= '/contact' title="Contact Us" />
             
         </ul>

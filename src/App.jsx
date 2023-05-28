@@ -5,6 +5,9 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import Footer from './components/Footer';
+import Productpage from './pages/Productpage';
+import Recipespage from './pages/Recipespage';
+import Kidspage from './pages/Kidspage';
 
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
       <Routes>
         <Route exact path='/' element={ <Home/>}/>
         <Route exact path="/AboutPage" element={<AboutPage/>}/>
+        <Route exact path= "/Productpage" element={<Productpage/>}/>
+        <Route exact path= "/Recipespage" element={<Recipespage/>}/>
+        <Route exact path= "/Kidspage" element={<Kidspage/>}/>
       </Routes>
       
       </div>  
