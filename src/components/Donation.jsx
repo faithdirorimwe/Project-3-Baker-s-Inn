@@ -1,11 +1,12 @@
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 import Button from "./Button";
 
 const Donations = () => {
-    const { data: Donation, error, isPending } = useFetch('http://localhost:7001/Donation'); 
+    // const { data: Donation, error, isPending } = useFetch('http://localhost:7001/Donation'); 
     return ( 
         <>
-        {Donation && Donation.map((item, index) => {
+        {data.Donation && data.Donation.map((item, index) => {
             return(
             <div className="donation tour-don" key={index}>
                  <div className="img-container">

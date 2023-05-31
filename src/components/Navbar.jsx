@@ -15,7 +15,7 @@ const Navbar = () => {
             <li className='menu-item'><NavLink to = "/Productpage">Products</NavLink></li>
             <li className='menu-item'><NavLink to = "/Recipespage">Recipes</NavLink></li>
             <li className='menu-item'><NavLink to = "Kidspage">Kid's Corner</NavLink></li>
-            <Button toPath= '/contact' title="Contact Us" />
+            <Button toPath= '/Contactpage' title="Contact Us" />
             
         </ul>
     </div>

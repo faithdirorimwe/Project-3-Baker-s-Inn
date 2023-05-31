@@ -1,4 +1,4 @@
-
+const data = 
 
 {
     "Products": [
@@ -488,7 +488,7 @@
                 {
                     "id":3,
                     "title":"The Finest of Baker’s Tik Tok Community Recipes",
-                    "ptext":"English breakfast done right with Baker’s Inn Bread #British #Bakers #Breakfast",
+                    "ptext":"English breakfast done right with Baker’s Inn Bread🇿🇼#British #Bakers #Breakfast",
                     "text":"@The_Bakers_Inn",
                     "image":"src/assets/img/Ellipse 10.png"
                 },
@@ -638,3 +638,5 @@
         }
     ]
 }
+
+export default data

@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Productpage from './pages/Productpage';
 import Recipespage from './pages/Recipespage';
 import Kidspage from './pages/Kidspage';
+import Contactpage from './pages/Contactpage';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route exact path= "/Productpage" element={<Productpage/>}/>
         <Route exact path= "/Recipespage" element={<Recipespage/>}/>
         <Route exact path= "/Kidspage" element={<Kidspage/>}/>
+        <Route exact path= "/Contactpage" element={<Contactpage/>}/>
       </Routes>
       
       </div>  

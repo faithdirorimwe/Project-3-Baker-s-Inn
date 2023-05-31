@@ -1,18 +1,19 @@
 import Button from "./Button";
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 
 const Kidsgame = () => {
-    const{data: Kidsgame, error, isPending} = useFetch('http://localhost:7001/Kidsgame');
+    // const{data: Kidsgame, error, isPending} = useFetch('http://localhost:7001/Kidsgame');
     return ( 
         <>
-        {Kidsgame && Kidsgame.map((item, index) => {
+        {data.Kidsgame && data.Kidsgame.map((item, index) => {
             return(
-                <div className="kids-games">
+                <div className="kids-games" key={index}>
 
                     <div className="games g-one">
                         {item.gameone && item.gameone.map((item, index) => {
                             return(
-                                <div className="game-one">
+                                <div className="game-one" key={index}>
                                     <div className="text">
                                         <h1>{item.title}</h1>
                                         <p>{item.ptext}</p>
@@ -32,7 +33,7 @@ const Kidsgame = () => {
                      <div className="games g-two">
                      {item.gametwo && item.gametwo.map((item, index) => {
                             return(
-                                <div className="game-one">
+                                <div className="game-one" key={index}>
                                     <div className="text">
                                         <h1>{item.title}</h1>
                                         <p>{item.ptext}</p>
@@ -40,7 +41,9 @@ const Kidsgame = () => {
                                     </div>
                                     <div className="riskyway-game">
                                         <div className="img-one">
+                                        <div></div>
                                         <img src={item.image} alt="" />
+                                       
                                         </div>
                                         <div className="img-two">
                                         <img src={item.imagetwo} alt="" />
@@ -56,7 +59,7 @@ const Kidsgame = () => {
                      <div className="games g-three">
                      {item.gamethree && item.gamethree.map((item, index) => {
                             return(
-                                <div className="game-one">
+                                <div className="game-one" key={index}>
                                     <div className="text">
                                         <h1>{item.title}</h1>
                                         <p>{item.ptext}</p>

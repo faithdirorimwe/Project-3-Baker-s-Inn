@@ -1,16 +1,17 @@
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 
 const RecipesHero = () => {
-    const { data: RecipesHero, error, isPending } = useFetch('http://localhost:7001/RecipesHero')
+    // const { data: RecipesHero, error, isPending } = useFetch('http://localhost:7001/RecipesHero')
     return (
         <>
-            {RecipesHero && RecipesHero.map((item, index) => {
+            {data.RecipesHero && data.RecipesHero.map((item, index) => {
                 return (
-                    <div className="recipe-hero">
+                    <div className="recipe-hero" key={index}>
                         <div className="recipe-slider ">
                             {item.content && item.content.map((item, index) => {
                                 return (
-                                    <div className="recipe-sliderinner">
+                                    <div className="recipe-sliderinner" key={index}>
                                         <div className="title">
                                          <h2>{item.title}</h2>    
                                         </div>
@@ -30,7 +31,7 @@ const RecipesHero = () => {
                             <div className="slider-inner one">
                                 {item.imgcontainer && item.imgcontainer.map((item, index) => {
                                     return (
-                                        <div className="slider-image">
+                                        <div className="slider-image" key={index}>
                                             <img src={item.image} alt="" />
                                             <div className="overlay"></div>
                                         </div>
@@ -40,7 +41,7 @@ const RecipesHero = () => {
                             <div className="slider-inner">
                                 {item.imgcontainerone && item.imgcontainerone.map((item, index) => {
                                     return (
-                                        <div className="slider-image">
+                                        <div className="slider-image" key={index}>
                                             <img src={item.image} alt="" />
                                             <div className="overlay"></div>
                                         </div>

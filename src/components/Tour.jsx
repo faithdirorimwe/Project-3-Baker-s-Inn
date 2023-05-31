@@ -1,13 +1,14 @@
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 import Button from "./Button";
 // import CustomModal from "./CustomModal";
 
 const Tour = () => {
-    const { data: Tour, error, isPending } = useFetch('http://localhost:7001/Tour'); 
+    // const { data: Tour, error, isPending } = useFetch('http://localhost:7001/Tour'); 
     
     return ( 
         <>
-        {Tour && Tour.map((item, index) => {
+        {data.Tour && data.Tour.map((item, index) => {
             return(
             <div className="tour-don" key={index}>
                 <div className="content">

@@ -1,8 +1,9 @@
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 import { useState } from "react";
 
 const Tabspro = () => {
-    const { data: ProductsAbout, error, isPending } = useFetch('http://localhost:7001/ProductsAbout');
+    // const { data: ProductsAbout, error, isPending } = useFetch('http://localhost:7001/ProductsAbout');
 
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -10,9 +11,9 @@ const Tabspro = () => {
     }
     return (
         <>
-            {ProductsAbout && ProductsAbout.map((item, index) => {
+            {data.ProductsAbout && data.ProductsAbout.map((item, index) => {
                 return (
-                    <div className="pro-tabs">
+                    <div className="pro-tabs recipies" key={index}>
                         <div className="bloc-tabs">
                             <div
                                 className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
@@ -32,7 +33,7 @@ const Tabspro = () => {
                             <div className={toggleState === 1 ? "one content active-content" : "content"}>
                                 {item.contentone && item.contentone.map((item, index) => {
                                     return (
-                                        <div className="card">
+                                        <div className="card" key={index}>
                                             <img src={item.image} alt="" />
 
                                             <div className="card-inner">
@@ -53,7 +54,7 @@ const Tabspro = () => {
                             <div className={toggleState === 2 ? "content active-content" : "content"}>
                                 {item.contenttwo && item.contenttwo.map((item, index) => {
                                     return (
-                                        <div className="card">
+                                        <div className="card" key={index}>
                                             <img src={item.image} alt="" />
 
                                             <div className="card-inner">
@@ -74,7 +75,7 @@ const Tabspro = () => {
                             <div className={toggleState === 3 ? "content active-content" : "content"}>
                                 {item.contentthree && item.contentthree.map((item, index) => {
                                     return (
-                                        <div className="card">
+                                        <div className="card" key={index}>
                                             <img src={item.image} alt="" />
 
                                             <div className="card-inner">
@@ -95,7 +96,7 @@ const Tabspro = () => {
                             <div className={toggleState === 4 ? "content active-content" : "content"}>
                                 {item.contentfour && item.contentfour.map((item, index) => {
                                     return (
-                                        <div className="card">
+                                        <div className="card" key={index}>
                                             <img src={item.image} alt="" />
 
                                             <div className="card-inner">

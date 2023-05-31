@@ -1,16 +1,18 @@
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 
 const KidsHero = () => {
-    const{data: KidsHero, error, isPending} = useFetch('http://localhost:7001/KidsHero');
+    // const{data: KidsHero, error, isPending} = useFetch('http://localhost:7001/KidsHero');
     return ( 
         <>
-        {KidsHero && KidsHero.map((item, index) => {
+        {data.KidsHero && data.KidsHero.map((item, index) => {
             return(
-                <div className="kids-hero">
+                <div className="kids-hero" key={index}>
 
                     <div className="heading">
                         <div className="text">
-                            <p>{item.title}</p>
+                            <p>{item.title} </p>
+                            <p>{item.title1}</p>
                         </div>
 
                         <div className="text-inner">

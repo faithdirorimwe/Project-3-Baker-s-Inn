@@ -1,12 +1,13 @@
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import {faTwitter, faFacebook, faLinkedin} from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
-    const { data: Footer, error, isPending } = useFetch('http://localhost:7001/Footer');
+    // const { data: Footer, error, isPending } = useFetch('http://localhost:7001/Footer');
     return (
         <>
-            {Footer && Footer.map((item, index) => {
+            {data.footer && data.footer.map((item, index) => {
                 return (
                     <div className="footer" key={index}>
                         <div className="bakers-logo">
@@ -22,7 +23,7 @@ const Footer = () => {
                                 <div className="image">
                                 {item.instacontent && item.instacontent.map(item => {
                                     return (
-                                        <img src={item.image} alt="" />
+                                        <img src={item.image} alt=""/>
                                     )
                                 })}
                                 </div>

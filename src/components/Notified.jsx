@@ -1,10 +1,11 @@
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 
 const Notified = () => {
-    const { data: Notified, error, isPending } = useFetch('http://localhost:7001/Notified');
+    // const { data: Notified, error, isPending } = useFetch('http://localhost:7001/Notified');
     return (
         <>
-            {Notified && Notified.map((item, index) => {
+            {data.Notified && data.Notified.map((item, index) => {
                 return (
                     <div className="notification" key={index}>
                         

@@ -1,14 +1,15 @@
 import { ReactComponent as PatternOne } from '../assets/img/African Pattern 1.svg';
 import { ReactComponent as PatternTwo } from '../assets/img/African Pattern 5.svg';
 import Button from './Button';
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from '../../database/db';
 
 
 const Kids = () => {
-   const { data: Kids, error, isPending } = useFetch('http://localhost:7001/Kids');
+   // const { data: Kids, error, isPending } = useFetch('http://localhost:7001/Kids');
    return (
       <>
-         {Kids && Kids.map((item, index) => {
+         {data.Kids && data.Kids.map((item, index) => {
             return (
                <div className="kids" key={index}>
                   

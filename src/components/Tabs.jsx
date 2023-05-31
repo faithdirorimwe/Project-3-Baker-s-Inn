@@ -1,9 +1,10 @@
 import { useState } from "react";
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 // import { Card } from "react-bootstrap";
 
 const Tabs = () => {
-    const { data: Recipies, error, isPending } = useFetch('http://localhost:7001/Recipies');
+    // const { data: Recipies, error, isPending } = useFetch('http://localhost:7001/Recipies');
 
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -11,9 +12,9 @@ const Tabs = () => {
     }
     return (
         <>
-            {Recipies && Recipies.map((item, index) => {
+            {data.Recipies && data.Recipies.map((item, index) => {
                 return (
-                    <div className="recipies" key="index">
+                    <div className="recipies" key={index}>
 
                         <div className="bloc-tabs">
                             <div
@@ -31,7 +32,7 @@ const Tabs = () => {
                             <div className={toggleState === 1 ? "content active-content" : "content"}>
                                 {item.imageone && item.imageone.map((item, index) => {
                                     return (
-                                        <div className="card">
+                                        <div className="card" key={index}>
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}
@@ -54,7 +55,7 @@ const Tabs = () => {
                             <div className={toggleState === 2 ? "content active-content" : "content"}>
                                 {item.imagetwo && item.imagetwo.map((item, index) => {
                                     return (
-                                        <div className="card">
+                                        <div className="card" key={index}>
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}
@@ -77,7 +78,7 @@ const Tabs = () => {
                             <div className={toggleState === 3 ? "content active-content" : "content"}>
                                 {item.imagethree && item.imagethree.map((item, index) => {
                                     return (
-                                        <div className="card">
+                                        <div className="card" key={index}>
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}

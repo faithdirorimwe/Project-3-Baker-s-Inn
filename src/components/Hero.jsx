@@ -16,7 +16,14 @@ const Hero = () => {
             </div>
             <div className="content-inner">
                 <div className="infor">
-                    <h1>Bringing you the <span className='one'>best value </span> at the <span className='two'>best prices.</span></h1>
+                <div className="one"></div>
+                    <div className="two"></div>
+                    <div className="heading">
+                        <p>Bringing you the</p>
+                        <p> <span>best value at</span> the </p>
+                        <p><span>best prices.</span></p>
+                    </div>
+                   
                     <p>The freshest sandwiches you can make are with Baker’s inn soft white loaf.</p>
                     <Button toPath='/' title="Read More" />
                 </div>

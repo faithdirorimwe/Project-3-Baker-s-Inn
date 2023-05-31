@@ -1,10 +1,11 @@
-import useFetch from "./useFetch";
+// import useFetch from "./useFetch";
+import data from "../../database/db";
 
 const CeoInfo = () => {
-    const{data:CeoInfo, error, isPending} = useFetch('http://localhost:7001/CeoInfo');
+    // const{data:CeoInfo, error, isPending} = useFetch('http://localhost:7001/CeoInfo');
     return (
         <>
-          {CeoInfo && CeoInfo.map((item, index) =>{
+          {data.CeoInfo && data.CeoInfo.map((item, index) =>{
             return(
                 <div className="ceo-info" key={index}>
                     <div className="image">
