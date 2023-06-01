@@ -7,12 +7,12 @@ const AboutServices = () => {
         <>
         {data.AboutServices && data.AboutServices.map((item) => {
             return(
-                <div className="about-services">
+                <div key={item.id} className="about-services">
                     <h2>{item.title}</h2>
                     <div className="about-inner">
                         {item.content && item.content.map(item => {
                             return(
-                                <div className="inner" >
+                                <div key={item.id} className="inner" >
                                     <div className="image">
                                      <img src={item.image} alt="" />   
                                     </div>
@@ -28,7 +28,7 @@ const AboutServices = () => {
                     <div className="about-innertwo">
                     {item.contentone && item.contentone.map(item => {
                             return(
-                                <div className="inner">
+                                <div key={item.id} className="inner">
                                     <div className="image">
                                      <img src={item.image} alt="" />   
                                     </div>

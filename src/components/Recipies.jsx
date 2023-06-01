@@ -8,7 +8,7 @@ const Recipies = () => {
         <>
         {data.Recipies && data.Recipies.map((item) => {
             return(
-                <div className="recipies">
+                <div key={item.id} className="recipies">
                     <h2>{item.title}</h2>
                     <Tabs/>
                 </div>

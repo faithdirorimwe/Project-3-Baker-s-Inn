@@ -4,24 +4,25 @@ import Button from "./Button";
 
 const Donations = () => {
     // const { data: Donation, error, isPending } = useFetch('http://localhost:7001/Donation'); 
-    return ( 
+    return (
         <>
-        {data.Donation && data.Donation.map((item) => {
-            return(
-            <div className="donation tour-don">
-                 <div className="img-container">
-                    <img src={item.image} alt="" />
-                </div>
-                <div className="content">
-                    <h2>{item.title}</h2>
-                    <p className="ptext">{item.content}</p>
-                    <Button toPath='' title='REQUEST DONATIONS'/>
-                </div>
-            </div>
-            )
-        })}
+            {data.Donation && data.Donation.map((item) => {
+                return (
+                    <div key={item.id} className="donation tour-don">
+                        <div className="img-container">
+                            <img src={item.image} alt="" />
+                        </div>
+                        <div className="content">
+                            <h2>{item.title}</h2>
+                            <p className="ptext">{item.content}</p>
+                            <Button toPath='' title='REQUEST DONATIONS' />
+                        </div>
+                    </div>
+                )
+            })}
+
         </>
-     );
+    );
 }
- 
+
 export default Donations;

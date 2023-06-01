@@ -3,7 +3,7 @@ import AboutHero from "../components/AboutHero";
 import AboutServices from "../components/AboutServices";
 import CeoInfo from "../components/CeoInfo";
 
-const AboutPage = () => {
+const Aboutpage = () => {
     return ( 
         <>
         <section id="about-hero">
@@ -22,4 +22,4 @@ const AboutPage = () => {
      );
 }
  
-export default AboutPage;
+export default Aboutpage;

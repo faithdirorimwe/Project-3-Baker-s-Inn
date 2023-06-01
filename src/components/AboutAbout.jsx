@@ -7,7 +7,7 @@ const AboutAbout = () => {
         <>
             {data.AboutAbout && data.AboutAbout.map((item) => {
                 return (
-                    <div className="about-about">
+                    <div key={item.id} className="about-about">
                         <div className="mission">
                             <div className="image one">
                                 <img src={item.imageone} alt="" />

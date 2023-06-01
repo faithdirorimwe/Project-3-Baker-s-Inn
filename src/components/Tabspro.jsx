@@ -13,7 +13,7 @@ const Tabspro = () => {
         <>
             {data.ProductsAbout && data.ProductsAbout.map((item) => {
                 return (
-                    <div className="pro-tabs recipies">
+                    <div key={item.id} className="pro-tabs recipies">
                         <div className="bloc-tabs">
                             <div
                                 className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
@@ -33,7 +33,7 @@ const Tabspro = () => {
                             <div className={toggleState === 1 ? "one content active-content" : "content"}>
                                 {item.contentone && item.contentone.map(item => {
                                     return (
-                                        <div className="card">
+                                        <div key={item.id} className="card">
                                             <img src={item.image} alt="" />
 
                                             <div className="card-inner">
@@ -54,7 +54,7 @@ const Tabspro = () => {
                             <div className={toggleState === 2 ? "content active-content" : "content"}>
                                 {item.contenttwo && item.contenttwo.map(item => {
                                     return (
-                                        <div className="card">
+                                        <div key={item.id} className="card">
                                             <img src={item.image} alt="" />
 
                                             <div className="card-inner">
@@ -75,7 +75,7 @@ const Tabspro = () => {
                             <div className={toggleState === 3 ? "content active-content" : "content"}>
                                 {item.contentthree && item.contentthree.map(item => {
                                     return (
-                                        <div className="card">
+                                        <div key={item.id} className="card">
                                             <img src={item.image} alt="" />
 
                                             <div className="card-inner">
@@ -96,7 +96,7 @@ const Tabspro = () => {
                             <div className={toggleState === 4 ? "content active-content" : "content"}>
                                 {item.contentfour && item.contentfour.map(item => {
                                     return (
-                                        <div className="card">
+                                        <div key={item.id} className="card">
                                             <img src={item.image} alt="" />
 
                                             <div className="card-inner">

@@ -9,7 +9,7 @@ const Footer = () => {
         <>
             {data.footer && data.footer.map((item) => {
                 return (
-                    <div className="footer">
+                    <div key={item.id} className="footer">
                         <div className="bakers-logo">
                         <img src={item.bakersimage} alt="" />
                         </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                                 <div className="image">
                                 {item.instacontent && item.instacontent.map(item => {
                                     return (
-                                        <img src={item.image} alt=""/>
+                                        <img key={item.id} src={item.image} alt=""/>
                                     )
                                 })}
                                 </div>
@@ -32,7 +32,7 @@ const Footer = () => {
                                 <h3>{item.loctitle}</h3>
                                 {item.loccotent && item.loccotent.map(item => {
                                     return(
-                                        <p>{item.title}</p>
+                                        <p key={item.id}>{item.title}</p>
                                     )
                                 })}
                             </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                                 {item.intouchcontent && item.intouchcontent.map(item => {
                                     return(
                                        
-                                        <div className="content">
+                                        <div key={item.id} className="content">
                                             <img src={item.image} alt="" />
                                                  <p>{item.title}</p>
                                                  
@@ -53,7 +53,7 @@ const Footer = () => {
                                 <h3>{item.sitemaptitle}</h3>
                                 {item.sitemapcontent && item.sitemapcontent.map(item => {
                                     return(
-                                        <p>{item.title}</p>
+                                        <p key={item.id}>{item.title}</p>
                                     )
                                 })}
                             </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                         </div>
 
                         <div className="footer-inner">
-                            <div className="inner-con">
+                            <div key={item.id}className="inner-con">
                             <p>{item.endtitle}</p>
                             <img src={item.innscorimg} alt="" />
                             </div>

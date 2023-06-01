@@ -14,7 +14,7 @@ const Tabs = () => {
         <>
             {data.Recipies && data.Recipies.map((item) => {
                 return (
-                    <div className="recipies">
+                    <div key={item.id} className="recipies">
 
                         <div className="bloc-tabs">
                             <div
@@ -32,7 +32,7 @@ const Tabs = () => {
                             <div className={toggleState === 1 ? "content active-content" : "content"}>
                                 {item.imageone && item.imageone.map(item => {
                                     return (
-                                        <div className="card">
+                                        <div key={item.id} className="card">
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}
@@ -55,7 +55,7 @@ const Tabs = () => {
                             <div className={toggleState === 2 ? "content active-content" : "content"}>
                                 {item.imagetwo && item.imagetwo.map(item => {
                                     return (
-                                        <div className="card">
+                                        <div key={item.id} className="card">
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}
@@ -78,7 +78,7 @@ const Tabs = () => {
                             <div className={toggleState === 3 ? "content active-content" : "content"}>
                                 {item.imagethree && item.imagethree.map(item => {
                                     return (
-                                        <div className="card">
+                                        <div key={item.id} className="card">
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}

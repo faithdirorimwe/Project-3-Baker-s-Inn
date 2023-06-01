@@ -7,7 +7,7 @@ const CeoInfo = () => {
         <>
           {data.CeoInfo && data.CeoInfo.map((item) =>{
             return(
-                <div className="ceo-info">
+                <div key={item.id} className="ceo-info">
                     <div className="image">
                         <img src={item.image} alt="" />
                     </div>

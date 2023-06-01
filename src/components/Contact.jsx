@@ -7,10 +7,10 @@ const Contact = () => {
         <>
             {data.Contact && data.Contact.map((item) => {
                 return (
-                    <div className="contact">
+                    <div key={item.id} className="contact">
                         {item.hero && item.hero.map(item => {
                             return (
-                                <div className="contact-hero">
+                                <div key={item.id} className="contact-hero">
                                     <img src={item.image} alt="" />
                                     <div className="text">
                                         <h2>{item.title}</h2>
@@ -25,10 +25,10 @@ const Contact = () => {
                         <div className="about-contact">
                             {item.about && item.about.map(item => {
                                 return (
-                                    <div className="about-content">
+                                    <div key={item.id} className="about-content">
                                         {item.aboutinner && item.aboutinner.map(item => {
                                             return (
-                                                <div className="content">
+                                                <div key={item.id} className="content">
                                                     <div className="image">
                                                         <img src={item.image} alt="" />
                                                     </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                         <div className="list-depots">
                             {item.listdepots && item.listdepots.map(item => {
                                 return (
-                                    <div className="deport-title">
+                                    <div key={item.id} className="deport-title">
                                         <h2>{item.title}</h2>
                                         <div className="content">
                                             
@@ -83,7 +83,7 @@ const Contact = () => {
                         <div className="enquiries">
                             {item.contact && item.contact.map(item => {
                                 return(
-                                    <div className="enquiries-inner">
+                                    <div key={item.id} className="enquiries-inner">
                                         <img src={item.image} alt="" />
 
                                         <div className="infor">
@@ -102,7 +102,7 @@ const Contact = () => {
                             <div className="request">
                                 {item.request && item.request.map(item => {
                                     return(
-                                        <div className="request-inner">
+                                        <div key={item.id} className="request-inner">
                                             <h2>{item.title}</h2>
                                             <p>{item.ptext}</p>
                                         </div>

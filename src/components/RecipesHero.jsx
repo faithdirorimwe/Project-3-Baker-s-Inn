@@ -7,7 +7,7 @@ const RecipesHero = () => {
         <>
             {data.RecipesHero && data.RecipesHero.map((item) => {
                 return (
-                    <div className="recipe-hero">
+                    <div key={item.id} className="recipe-hero">
                         <div className="recipe-slider ">
                             {item.content && item.content.map(item => {
                                 return (
@@ -31,7 +31,7 @@ const RecipesHero = () => {
                             <div className="slider-inner one">
                                 {item.imgcontainer && item.imgcontainer.map(item => {
                                     return (
-                                        <div className="slider-image">
+                                        <div key={item.id} className="slider-image">
                                             <img src={item.image} alt="" />
                                             <div className="overlay"></div>
                                         </div>
@@ -41,7 +41,7 @@ const RecipesHero = () => {
                             <div className="slider-inner">
                                 {item.imgcontainerone && item.imgcontainerone.map(item => {
                                     return (
-                                        <div className="slider-image">
+                                        <div key={item.id} className="slider-image">
                                             <img src={item.image} alt="" />
                                             <div className="overlay"></div>
                                         </div>

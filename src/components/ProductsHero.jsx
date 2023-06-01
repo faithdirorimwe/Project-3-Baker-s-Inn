@@ -8,7 +8,7 @@ const ProductsHero = () => {
         <>
         {data.ProductsHero && data.ProductsHero.map((item) => {
             return(
-                <div className="about-hero product-hero">
+                <div key={item.id} className="about-hero product-hero">
                 <div className="image">
                     <img src={item.image} alt="" />
                     <div className="text">

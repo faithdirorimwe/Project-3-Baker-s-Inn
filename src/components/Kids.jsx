@@ -11,7 +11,7 @@ const Kids = () => {
       <>
          {data.Kids && data.Kids.map((item) => {
             return (
-               <div className="kids">
+               <div key={item.id} className="kids">
                   
                   <div className="kids-content">
                      <PatternOne className='pattern' />

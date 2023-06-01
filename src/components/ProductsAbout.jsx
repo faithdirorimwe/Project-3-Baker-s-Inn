@@ -9,7 +9,7 @@ const ProductsAbout = () => {
         <>
         {data.ProductsAbout && data.ProductsAbout.map((item) => {
             return(
-                <div className="products-about">
+                <div key={item.id} className="products-about">
                     <h2>{item.title}</h2>
                     <Tabspro/>
                 </div>

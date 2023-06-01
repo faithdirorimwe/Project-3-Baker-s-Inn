@@ -8,12 +8,12 @@ const Kidsgame = () => {
         <>
         {data.Kidsgame && data.Kidsgame.map((item) => {
             return(
-                <div className="kids-games">
+                <div key={item.id} className="kids-games">
 
                     <div className="games g-one">
                         {item.gameone && item.gameone.map(item => {
                             return(
-                                <div className="game-one">
+                                <div key={item.id} className="game-one">
                                     <div className="text">
                                         <h1>{item.title}</h1>
                                         <p>{item.ptext}</p>

@@ -7,7 +7,7 @@ const KidsHero = () => {
         <>
         {data.KidsHero && data.KidsHero.map((item) => {
             return(
-                <div className="kids-hero">
+                <div key={item.id} className="kids-hero">
 
                     <div className="heading">
                         <div className="text">
