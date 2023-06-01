@@ -6,9 +6,9 @@ const Donations = () => {
     // const { data: Donation, error, isPending } = useFetch('http://localhost:7001/Donation'); 
     return ( 
         <>
-        {data.Donation && data.Donation.map((item, index) => {
+        {data.Donation && data.Donation.map((item) => {
             return(
-            <div className="donation tour-don" key={index}>
+            <div className="donation tour-don">
                  <div className="img-container">
                     <img src={item.image} alt="" />
                 </div>

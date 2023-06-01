@@ -6,9 +6,9 @@ const Recipies = () => {
     // const{data: Recipies, error, isPending} = useFetch('http://localhost:7001/Recipies');
     return ( 
         <>
-        {data.Recipies && data.Recipies.map((item, index) => {
+        {data.Recipies && data.Recipies.map((item) => {
             return(
-                <div className="recipies" key={index}>
+                <div className="recipies">
                     <h2>{item.title}</h2>
                     <Tabs/>
                 </div>

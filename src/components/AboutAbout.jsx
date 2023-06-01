@@ -5,9 +5,9 @@ const AboutAbout = () => {
     // const { data: AboutAbout, error, isPending } = useFetch('http://localhost:7001/AboutAbout');
     return (
         <>
-            {data.AboutAbout && data.AboutAbout.map((item, index) => {
+            {data.AboutAbout && data.AboutAbout.map((item) => {
                 return (
-                    <div className="about-about" key={index}>
+                    <div className="about-about">
                         <div className="mission">
                             <div className="image one">
                                 <img src={item.imageone} alt="" />

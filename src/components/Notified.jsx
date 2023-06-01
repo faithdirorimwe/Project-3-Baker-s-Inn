@@ -5,9 +5,9 @@ const Notified = () => {
     // const { data: Notified, error, isPending } = useFetch('http://localhost:7001/Notified');
     return (
         <>
-            {data.Notified && data.Notified.map((item, index) => {
+            {data.Notified && data.Notified.map((item) => {
                 return (
-                    <div className="notification" key={index}>
+                    <div className="notification">
                         
                             <img src={item.patternOne} alt="" />
                             <img src={item.patternTwo} alt="" />

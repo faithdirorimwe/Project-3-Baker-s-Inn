@@ -6,14 +6,14 @@ const Kidsgame = () => {
     // const{data: Kidsgame, error, isPending} = useFetch('http://localhost:7001/Kidsgame');
     return ( 
         <>
-        {data.Kidsgame && data.Kidsgame.map((item, index) => {
+        {data.Kidsgame && data.Kidsgame.map((item) => {
             return(
-                <div className="kids-games" key={index}>
+                <div className="kids-games">
 
                     <div className="games g-one">
-                        {item.gameone && item.gameone.map((item, index) => {
+                        {item.gameone && item.gameone.map(item => {
                             return(
-                                <div className="game-one" key={index}>
+                                <div className="game-one">
                                     <div className="text">
                                         <h1>{item.title}</h1>
                                         <p>{item.ptext}</p>
@@ -31,9 +31,9 @@ const Kidsgame = () => {
                     </div>
 
                      <div className="games g-two">
-                     {item.gametwo && item.gametwo.map((item, index) => {
+                     {item.gametwo && item.gametwo.map(item => {
                             return(
-                                <div className="game-one" key={index}>
+                                <div className="game-one">
                                     <div className="text">
                                         <h1>{item.title}</h1>
                                         <p>{item.ptext}</p>
@@ -57,9 +57,9 @@ const Kidsgame = () => {
                     </div>
 
                      <div className="games g-three">
-                     {item.gamethree && item.gamethree.map((item, index) => {
+                     {item.gamethree && item.gamethree.map(item => {
                             return(
-                                <div className="game-one" key={index}>
+                                <div className="game-one">
                                     <div className="text">
                                         <h1>{item.title}</h1>
                                         <p>{item.ptext}</p>

@@ -7,9 +7,9 @@ const Footer = () => {
     // const { data: Footer, error, isPending } = useFetch('http://localhost:7001/Footer');
     return (
         <>
-            {data.footer && data.footer.map((item, index) => {
+            {data.footer && data.footer.map((item) => {
                 return (
-                    <div className="footer" key={index}>
+                    <div className="footer">
                         <div className="bakers-logo">
                         <img src={item.bakersimage} alt="" />
                         </div>

@@ -5,13 +5,13 @@ const RecipesHero = () => {
     // const { data: RecipesHero, error, isPending } = useFetch('http://localhost:7001/RecipesHero')
     return (
         <>
-            {data.RecipesHero && data.RecipesHero.map((item, index) => {
+            {data.RecipesHero && data.RecipesHero.map((item) => {
                 return (
-                    <div className="recipe-hero" key={index}>
+                    <div className="recipe-hero">
                         <div className="recipe-slider ">
-                            {item.content && item.content.map((item, index) => {
+                            {item.content && item.content.map(item => {
                                 return (
-                                    <div className="recipe-sliderinner" key={index}>
+                                    <div className="recipe-sliderinner">
                                         <div className="title">
                                          <h2>{item.title}</h2>    
                                         </div>
@@ -29,9 +29,9 @@ const RecipesHero = () => {
 
                         <div className="slider-content">
                             <div className="slider-inner one">
-                                {item.imgcontainer && item.imgcontainer.map((item, index) => {
+                                {item.imgcontainer && item.imgcontainer.map(item => {
                                     return (
-                                        <div className="slider-image" key={index}>
+                                        <div className="slider-image">
                                             <img src={item.image} alt="" />
                                             <div className="overlay"></div>
                                         </div>
@@ -39,9 +39,9 @@ const RecipesHero = () => {
                                 })}
                             </div>
                             <div className="slider-inner">
-                                {item.imgcontainerone && item.imgcontainerone.map((item, index) => {
+                                {item.imgcontainerone && item.imgcontainerone.map(item => {
                                     return (
-                                        <div className="slider-image" key={index}>
+                                        <div className="slider-image">
                                             <img src={item.image} alt="" />
                                             <div className="overlay"></div>
                                         </div>

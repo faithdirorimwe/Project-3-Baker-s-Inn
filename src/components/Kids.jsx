@@ -9,9 +9,9 @@ const Kids = () => {
    // const { data: Kids, error, isPending } = useFetch('http://localhost:7001/Kids');
    return (
       <>
-         {data.Kids && data.Kids.map((item, index) => {
+         {data.Kids && data.Kids.map((item) => {
             return (
-               <div className="kids" key={index}>
+               <div className="kids">
                   
                   <div className="kids-content">
                      <PatternOne className='pattern' />

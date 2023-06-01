@@ -5,14 +5,14 @@ const AboutServices = () => {
     // const {data:AboutServices, error, isPending} = useFetch('http://localhost:7001/AboutServices');
     return ( 
         <>
-        {data.AboutServices && data.AboutServices.map((item, index) => {
+        {data.AboutServices && data.AboutServices.map((item) => {
             return(
-                <div className="about-services" key={index}>
+                <div className="about-services">
                     <h2>{item.title}</h2>
                     <div className="about-inner">
-                        {item.content && item.content.map((item, index) => {
+                        {item.content && item.content.map(item => {
                             return(
-                                <div className="inner" key={index}>
+                                <div className="inner" >
                                     <div className="image">
                                      <img src={item.image} alt="" />   
                                     </div>
@@ -26,9 +26,9 @@ const AboutServices = () => {
                     </div>
 
                     <div className="about-innertwo">
-                    {item.contentone && item.contentone.map((item, index) => {
+                    {item.contentone && item.contentone.map(item => {
                             return(
-                                <div className="inner" key={index}>
+                                <div className="inner">
                                     <div className="image">
                                      <img src={item.image} alt="" />   
                                     </div>

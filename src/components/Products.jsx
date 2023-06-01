@@ -8,14 +8,14 @@ const Products = () => {
  
     return (
         <>
-            {data.Products && data.Products.map((item, index) => {
+            {data.Products && data.Products.map((item) => {
                 return (
-                    <section className="products" key={index}>
+                    <section className="products">
                         <h2>{item.title}</h2>
                         <div className="prod-imgBox">
                             {item.images && item.images.map(item => {
                                 return (
-                                    <div className="img-card" key={index}>
+                                    <div className="img-card">
                                         <img src={item.image} alt="" />
                                         <div className="prod-textBox">
                                             <h3>{item.title}</h3>

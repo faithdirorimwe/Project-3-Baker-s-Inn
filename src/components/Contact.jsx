@@ -5,12 +5,12 @@ const Contact = () => {
     // const { data: Contact, error, isPending } = useFetch('http://localhost:7001/Contact');
     return (
         <>
-            {data.Contact && data.Contact.map((item, index) => {
+            {data.Contact && data.Contact.map((item) => {
                 return (
-                    <div className="contact" key={index}>
-                        {item.hero && item.hero.map((item, index) => {
+                    <div className="contact">
+                        {item.hero && item.hero.map(item => {
                             return (
-                                <div className="contact-hero" key={index}>
+                                <div className="contact-hero">
                                     <img src={item.image} alt="" />
                                     <div className="text">
                                         <h2>{item.title}</h2>
@@ -23,12 +23,12 @@ const Contact = () => {
                         })}
 
                         <div className="about-contact">
-                            {item.about && item.about.map((item, index) => {
+                            {item.about && item.about.map(item => {
                                 return (
-                                    <div className="about-content" key={index}>
-                                        {item.aboutinner && item.aboutinner.map((item, index) => {
+                                    <div className="about-content">
+                                        {item.aboutinner && item.aboutinner.map(item => {
                                             return (
-                                                <div className="content" key={index}>
+                                                <div className="content">
                                                     <div className="image">
                                                         <img src={item.image} alt="" />
                                                     </div>
@@ -53,9 +53,9 @@ const Contact = () => {
                         </div>
 
                         <div className="list-depots">
-                            {item.listdepots && item.listdepots.map((item, index) => {
+                            {item.listdepots && item.listdepots.map(item => {
                                 return (
-                                    <div className="deport-title" key={index}>
+                                    <div className="deport-title">
                                         <h2>{item.title}</h2>
                                         <div className="content">
                                             
@@ -81,17 +81,17 @@ const Contact = () => {
                         </div>
 
                         <div className="enquiries">
-                            {item.contact && item.contact.map((item, index) => {
+                            {item.contact && item.contact.map(item => {
                                 return(
-                                    <div className="enquiries-inner" key={index}>
+                                    <div className="enquiries-inner">
                                         <img src={item.image} alt="" />
 
                                         <div className="infor">
                                             <div className="emailinfor">
-                                                <p><span>{item.emailinfo}</span> <br /> {item.email}</p>
+                                                <p>{item.emailinfo} <br /> <span> {item.email}</span></p>
                                             </div>
                                             <div className="emailinfor">
-                                                <p><span>{item.emailinfo1}</span> <br /> {item.email1}</p>
+                                                <p>{item.emailinfo1}<br /> <span>{item.email1}</span> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -100,9 +100,9 @@ const Contact = () => {
                         </div>
 
                             <div className="request">
-                                {item.request && item.request.map((item, index) => {
+                                {item.request && item.request.map(item => {
                                     return(
-                                        <div className="request-inner" key={index}>
+                                        <div className="request-inner">
                                             <h2>{item.title}</h2>
                                             <p>{item.ptext}</p>
                                         </div>

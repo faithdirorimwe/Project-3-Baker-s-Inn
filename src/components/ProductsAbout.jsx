@@ -7,9 +7,9 @@ const ProductsAbout = () => {
     // const{data: ProductsAbout, error, isPending} = useFetch('http://localhost:7001/ProductsAbout');
     return ( 
         <>
-        {data.ProductsAbout && data.ProductsAbout.map((item, index) => {
+        {data.ProductsAbout && data.ProductsAbout.map((item) => {
             return(
-                <div className="products-about" key={index}>
+                <div className="products-about">
                     <h2>{item.title}</h2>
                     <Tabspro/>
                 </div>

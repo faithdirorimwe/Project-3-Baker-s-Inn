@@ -5,9 +5,9 @@ const KidsHero = () => {
     // const{data: KidsHero, error, isPending} = useFetch('http://localhost:7001/KidsHero');
     return ( 
         <>
-        {data.KidsHero && data.KidsHero.map((item, index) => {
+        {data.KidsHero && data.KidsHero.map((item) => {
             return(
-                <div className="kids-hero" key={index}>
+                <div className="kids-hero">
 
                     <div className="heading">
                         <div className="text">

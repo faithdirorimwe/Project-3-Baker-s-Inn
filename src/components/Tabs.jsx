@@ -12,9 +12,9 @@ const Tabs = () => {
     }
     return (
         <>
-            {data.Recipies && data.Recipies.map((item, index) => {
+            {data.Recipies && data.Recipies.map((item) => {
                 return (
-                    <div className="recipies" key={index}>
+                    <div className="recipies">
 
                         <div className="bloc-tabs">
                             <div
@@ -30,9 +30,9 @@ const Tabs = () => {
 
                         <div className="content-tabs">
                             <div className={toggleState === 1 ? "content active-content" : "content"}>
-                                {item.imageone && item.imageone.map((item, index) => {
+                                {item.imageone && item.imageone.map(item => {
                                     return (
-                                        <div className="card" key={index}>
+                                        <div className="card">
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}
@@ -53,9 +53,9 @@ const Tabs = () => {
                             </div>
 
                             <div className={toggleState === 2 ? "content active-content" : "content"}>
-                                {item.imagetwo && item.imagetwo.map((item, index) => {
+                                {item.imagetwo && item.imagetwo.map(item => {
                                     return (
-                                        <div className="card" key={index}>
+                                        <div className="card">
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}
@@ -76,9 +76,9 @@ const Tabs = () => {
                             </div>
 
                             <div className={toggleState === 3 ? "content active-content" : "content"}>
-                                {item.imagethree && item.imagethree.map((item, index) => {
+                                {item.imagethree && item.imagethree.map(item => {
                                     return (
-                                        <div className="card" key={index}>
+                                        <div className="card">
                                             <img src={item.image} alt="" />
                                             <div className="card-title">
                                                 {item.title}
