@@ -3,36 +3,40 @@ import data from "../../database/db";
 
 const Notified = () => {
     // const { data: Notified, error, isPending } = useFetch('http://localhost:7001/Notified');
+
     return (
         <>
             {data.Notified && data.Notified.map((item) => {
                 return (
                     <div key={item.id} className="notification">
-                        
-                            <img src={item.patternOne} alt="" />
-                            <img src={item.patternTwo} alt="" />
-                        
+
+                        <img src={item.patternOne} alt="" />
+                        <img src={item.patternTwo} alt="" />
+
                         <div className="notify-content">
                             <div className="infor">
                                 <h2>{item.title}</h2>
                                 <form>
-                                   <input type="text" 
-                                   className="email"
-                                   required
-                                   value={item.email}
-                                   /> 
-                                   <input type="text" 
-                                   className="submit"
-                                   required
-                                   value={item.submit}
-                                   />
+                                    <input type="text"
+                                        className="email"
+                                        required
+                                        value={item.email}
+                                        onChange={(e) => { item.email = e.target.value }}
+                                    />
+                                    <input type="text"
+                                        className="submit"
+                                        required
+                                        value={item.submit}
+                                        onChange={(e) => { item.submit = e.target.value }}
+                                    />
+
                                 </form>
                             </div>
                             <div className="image-container">
-                                    <img src={item.imageOne} alt="" />
-                                    <img src={item.imageTwo} alt="" />
-                                    <img src={item.imageThree} alt="" />
-                              
+                                <img src={item.imageOne} alt="" />
+                                <img src={item.imageTwo} alt="" />
+                                <img src={item.imageThree} alt="" />
+
                             </div>
                         </div>
                     </div>
