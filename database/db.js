@@ -52,6 +52,7 @@ import pacman from '../src/assets/img/kisspng-pac-man-championship-edition-super
 import contacthero from '../src/assets/img/contacthero.png';
 import hfactory from '../src/assets/img/bakers-outlet-zoomed-out.jpg';
 import bfactory from '../src/assets/img/backers-outlet-zoomed-out.jpg';
+import way from '../src/assets/img/360_F_328970199_yha5RHD9pa6oj8fshXLqGYg1GSlbCGs0-transformed 2.png'
 
 
 
@@ -609,7 +610,7 @@ const data = {
                     "id":1,
                     "title": "Risky Way",
                     "ptext": "Risky Way is a free instant game. The highways of the future are risky and if you want to survive you'll need to be smarter than all of them combined. All you have to do in this nerve-tingling racing game is click, hold, and let go. Of course, if you want to be an effective driver who is able to survive you'll have to know when to click, how long to hold, and only let go at the appropriate time.",
-                    "image": "src/assets/img/360_F_328970199_yha5RHD9pa6oj8fshXLqGYg1GSlbCGs0-transformed 2.png",
+                    "image": way,
                     "imagetwo":riskyway
                 }
             ],
