@@ -25,9 +25,9 @@ function App() {
         <Route exact path= "/Kidspage" element={<Kidspage/>}/>
         <Route exact path= "/Contactpage" element={<Contactpage/>}/>
       </Routes>
-      
+         <Footer/>
       </div>  
-      <Footer/>
+   
     </Router>
   )
 }
