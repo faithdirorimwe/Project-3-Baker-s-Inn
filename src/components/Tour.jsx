@@ -24,18 +24,105 @@ const Tour = () => {
 
                             <Button onClick={handleModalOpen}>BOOK FACTORY TOUR</Button>
 
-                            <Modal className="modal-custom" show={showModal} onHide={handleModalClose}>
-                                <Modal.Header closeButton>
-                                    <Modal.Title>Book A Factory Tour</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </Modal.Body>
-                                <Modal.Footer>
-                                    <Button variant="secondary" onClick={handleModalClose}>
+                            <Modal className="modal-custom modal" show={showModal} onHide={handleModalClose}>
+                                <div className="content ">
+                                    <Modal.Header closeButton>
+                                        <Modal.Title className="heading">Book A Factory Tour</Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                        <div className="factory-content">
+                                            <div className="contact-form">
+                                                <form>
+                                                    <input type="text"
+                                                        className="email"
+                                                        required
+                                                        value="Name of Organisation"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                    <input type="text"
+                                                        className="email"
+                                                        required
+                                                        value="Name of Contact Person"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                    <input type="text"
+                                                        className="email"
+                                                        required
+                                                        value="Organization Address"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                    <input type="text"
+                                                        className="email"
+                                                        required
+                                                        value="Organization’s Resident Town"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                    <input type="text"
+                                                        className="email"
+                                                        required
+                                                        value="Contact Person’s Telephone"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                    <input type="text"
+                                                        className="email"
+                                                        required
+                                                        value="Contact Person’s E-mail"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                    <input type="text"
+                                                        className="email"
+                                                        required
+                                                        value="Date of Visit"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                    <input type="text"
+                                                        className="email"
+                                                        required
+                                                        value="Number of Participants"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                    <input type="text"
+                                                        className="range"
+                                                        required
+                                                        value="Age Range of Participants"
+                                                        onChange={(e) => { item.email = e.target.value }}
+                                                    />
+                                                </form>
+                                            </div>
+
+                                            <div className="rules">
+                                                <div className="terms">
+                                                    <p>Plant Visit <span>Terms & Conditions</span></p>
+                                                    <p>Plant Visit <span>Safety Regulations</span></p>
+                                                </div>
+                                                <div className="conditions">
+
+                                                    <form>
+                                                        <div className="checkbox">
+                                                            <input type="checkbox"
+                                                                className=""
+                                                                onChange={(e) => { item.email = e.target.value }}
+                                                            />
+                                                            <p>Your organisation has agreed to the submission of this application and you have authorisation to submit it. The information you have provided on behalf of your organisation is accurate, full and correct.</p>
+                                                        </div>
+                                                        <div className="checkbox">
+                                                            <input type="checkbox"
+                                                                className=""
+                                                                onChange={(e) => { item.email = e.target.value }}
+                                                            />
+                                                            <p>Have Read The Safety Regulations</p>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Modal.Body>
+
+                                    <Button className="button" variant="secondary" onClick={handleModalClose}>
                                         SUBMIT
                                     </Button>
-                                </Modal.Footer>
+                                </div>
                             </Modal>
 
 

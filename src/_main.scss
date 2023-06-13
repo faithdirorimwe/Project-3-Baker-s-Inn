@@ -1374,17 +1374,126 @@
     }
 }
 
-// .modal-custom{
-//     max-width: 80vw;
-//     max-height: 80vh;
-// }
 
+// Modal
 
-    .modal-custom{
-        // max-width: 1280px;
-        background-color: #c6a4605b;
-        
+.modal{
+    background: #C6A460;
+}
+.modal-content{
+    color: var(--pri-color);
+    width: 76vw;
+    height: 680px;
+    margin-top: 120px;
+    transform: translateX(-28%);
+    border: none;
+    border-radius: 0;
+}
+
+.btn-primary{
+    border: none;
+
+    &:hover{
+        background: none;
+        color: #000000;
     }
+}
+
+.modal-header{
+    border: none;
+}
+
+.modal-title{
+    margin-left: 360px;
+    font-size: 39px;
+    // color: var(--pri-color);
+    /* font-family: 'Montserrat'; */
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.content{
+    .button{
+
+    border: none;
+    width: 968px;
+    margin-left: 65px;
+    
+    &:hover{
+        background: none;
+        color: #000000;
+    }
+    }
+}
+
+.factory-content{
+
+    .contact-form{
+        width: 100%;
+        margin: 0 auto;
+
+        form{
+            width: 70vw;
+            margin: 0 auto;
+             
+              input{
+                  font-size: 17px;
+                  font-family: "Avenir LT Std";
+                  border: none;
+                  padding: 10px;
+                  width: 470px;
+                  background: #F7F5E8;
+                  color: #000000;
+                  opacity: 0.5;
+                  margin-top: 15px;
+                  margin-left: 26px;
+                  font-weight: 750;
+              }
+      
+              .range{
+                  width: 968px;
+              }
+          }
+    }
+   
+
+    .rules{
+        margin-top: 26px;
+    }
+
+    .terms{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        p{
+            span{
+                font-weight: 700;
+                border-bottom: 1px solid var(--pri-color);
+            }
+        }
+    }
+
+    .conditions{
+        width: 930px;
+        margin-left: 57px;
+         form{
+            display: flex;
+            flex-direction: column;
+            // justify-content: start;
+            align-items: start;
+            gap: 10px;
+
+         }
+
+         .checkbox{
+            display: flex;
+            align-items: start;
+            gap: 20px;
+         }
+    }
+}
 
    
 

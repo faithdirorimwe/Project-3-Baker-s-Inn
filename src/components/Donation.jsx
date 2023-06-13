@@ -1,6 +1,7 @@
 // import useFetch from "./useFetch";
 import data from "../../database/db";
 import Button from "./Button";
+import Modal from "./Modal";
 
 const Donations = () => {
     // const { data: Donation, error, isPending } = useFetch('http://localhost:7001/Donation'); 
