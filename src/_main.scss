@@ -251,6 +251,7 @@
     justify-content: center;
     gap: 100px;
 
+
     .content {
         width: 100%;
         text-align: start;
@@ -1384,10 +1385,23 @@
     color: var(--pri-color);
     width: 76vw;
     height: 680px;
-    margin-top: 120px;
+    margin-top: 45px;
     transform: translateX(-28%);
     border: none;
     border-radius: 0;
+}
+
+.modal-don{
+    .modal-content{
+        margin-top: 100px;
+        height: 570px;
+    }
+
+    .content{
+        p{
+            margin-left: 170px;
+        }
+    }
 }
 
 .btn-primary{
@@ -1397,6 +1411,13 @@
         background: none;
         color: #000000;
     }
+}
+
+.btn-close{
+    background-color: #261b6ca1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .modal-header{
